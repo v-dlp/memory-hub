@@ -1,3 +1,8 @@
+body {
+  background: url('bulb.png');
+  background-size: 4vh 5vw;
+}
+
 .nav {
     position: fixed;
     margin-top: 2vmin;
@@ -8,4 +13,12 @@
 
 a {
   text-decoration: none;
+}
+
+.spiral {
+  margin: auto;
+  display: flex;
+  width: 33vw;
+  height: 33vw;
+  background: rgba(123, 80, 100, 1);
 }
