@@ -21,3 +21,7 @@ a {
   width: 66vw;
   height: 100vh;
 }
+
+.garble {
+  filter: drop-shadow(3px 10px 3px black);
+}
