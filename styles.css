@@ -22,6 +22,32 @@ a {
   height: 100vh;
 }
 
+.spiral2 {
+  margin: 0;
+  display: flex;
+  width: 66vw;
+  height: 100vh;
+}
+
 .garble {
   filter: drop-shadow(3px 10px 3px black);
+}
+
+.dress {
+
+  width: 33vw;
+  height: 200vh;
+  margin: 1px;
+  position: absolute;
+  z-index: 1;
+  overflow: hidden;
+  -webkit-transition: width 1s;
+  transition: width 1s;
+
+}
+
+.dress:hover {
+  width: 11vw;
+  -webkit-transition: width 1s;
+  transition: width 1s;
 }
