@@ -1,6 +1,7 @@
 body {
-  background: url('bulb.png');
-  background-size: 100vw;
+  /* background: url('bulb.png'); */
+  background: black;
+  background-size: 50vw;
 }
 
 .nav {
@@ -18,15 +19,36 @@ a {
 .spiral {
   margin: auto;
   display: flex;
+
   width: 66vw;
   height: 100vh;
 }
 
 .spiral2 {
   margin: 0;
-  display: flex;
-  width: 66vw;
-  height: 100vh;
+  display: block;
+  position: relative;
+  width: 100vw;
+  height: 400vh;
+  z-index: 1;
+}
+
+.spiral3 {
+  margin: 0;
+  display: block;
+  position: relative;
+  width: 50vw;
+  height: 50vh;
+  z-index: 2;
+}
+
+.spiral4 {
+  margin: 0;
+  display: block;
+  position: relative;
+  width: 100vw;
+  height: 400vh;
+  z-index: 2;
 }
 
 .garble {
