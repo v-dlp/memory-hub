@@ -1,6 +1,6 @@
 body {
-  /* background: url('bulb.png'); */
-  background: black;
+  background: url('bulb.png');
+
   background-size: 50vw;
 }
 
@@ -30,6 +30,15 @@ a {
   position: relative;
   width: 100vw;
   height: 400vh;
+  z-index: 2;
+}
+
+.spiral_invert {
+  margin: 0;
+  display: block;
+  position: relative;
+  width: 100vw;
+  height: 400vh;
   z-index: 1;
 }
 
@@ -49,6 +58,14 @@ a {
   width: 100vw;
   height: 400vh;
   z-index: 2;
+}
+
+.spiral5 {
+  margin: auto;
+  display: block;
+  position: relative;
+
+  z-index: 3;
 }
 
 .garble {
