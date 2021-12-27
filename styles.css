@@ -1,5 +1,5 @@
 body {
-  background: url('bulb.png');
+  background: url('images/bulb.png');
 
   background-size: 50vw;
 }
@@ -9,22 +9,14 @@ body {
   margin-top: 2vmin;
   margin-left: 2vmin;
   font-size: 200%;
-  z-index: 1;
+  z-index: 4;
 }
 
 a {
   text-decoration: none;
 }
 
-.spiral {
-  margin: auto;
-  display: flex;
-
-  width: 66vw;
-  height: 100vh;
-}
-
-.spiral2 {
+.image_format1 {
   margin: 0;
   display: block;
   position: relative;
@@ -33,7 +25,16 @@ a {
   z-index: 2;
 }
 
-.spiral_invert {
+.image_format2 {
+  margin: 0;
+  display: block;
+  position: relative;
+  width: 100vw;
+  height: 400vh;
+  z-index: 2;
+}
+
+.stretched_images {
   margin: 0;
   display: block;
   position: relative;
@@ -42,51 +43,12 @@ a {
   z-index: 1;
 }
 
-.spiral3 {
-  margin: 0;
+.door_image {
+  margin-top: 200%;
+  margin-left: 70%;
   display: block;
-  position: relative;
-  width: 50vw;
-  height: 50vh;
-  z-index: 2;
-}
-
-.spiral4 {
-  margin: 0;
-  display: block;
-  position: relative;
-  width: 100vw;
-  height: 400vh;
-  z-index: 2;
-}
-
-.spiral5 {
-  margin: auto;
-  display: block;
-  position: relative;
-
-  z-index: 3;
-}
-
-.garble {
-  filter: drop-shadow(3px 10px 3px black);
-}
-
-.dress {
-
-  width: 33vw;
-  height: 200vh;
-  margin: 1px;
   position: absolute;
-  z-index: 1;
-  overflow: hidden;
-  -webkit-transition: width 1s;
-  transition: width 1s;
-
-}
-
-.dress:hover {
-  width: 11vw;
-  -webkit-transition: width 1s;
-  transition: width 1s;
+  width: 100vw;
+  height: 400vh;
+  z-index: 5;
 }

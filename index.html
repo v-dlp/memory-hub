@@ -1,128 +1,121 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>public turing</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <title>public turing</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link type='text/css' rel='stylesheet' href='styles.css'>
-</head>
-<body>
-  <div class='nav'>
-      <a href='https://gnarl.online/memory-palace/entrance.html'>&#10022;</a>
-  </div>
+    <link type='text/css' rel='stylesheet' href='styles.css'>
+  </head>
+    <body>
+      <div class='nav'>
+          <a href='https://gnarl.online/memory-palace/entrance.html'>&#10022;</a>
+      </div>
 
-  <!-- here be captcha horror -->
+    <!-- //neural and photoshopped bird image// -->
+      <div class='image_format1'>
+        <img src='images/myspirit.png' width='40%' height='40%'>
+      </div>
 
-  <!-- <div class='spiral'>
-    <img class='garble' src='garble2.png' width='100%' height='800%'>
-  </div> -->
+    <!-- //REALLY STRETCHED OUT BG IMAGES//
+    //I accidently had these set to 800% height but then I liked it so I kept them.
+    I copied the exact same image below but at 60% height instead// -->
+        <div class='stretched_images'>
+          <img src='images/purgatory_music.png' width='100%' height='800%'>
+        </div>
+        <div class='stretched_images'>
+          <img src='images/blessed_body2.png' width='100%' height='800%'>
+        </div>
+        <div class='stretched_images'>
+          <img src='images/eyeseyeseyes.png' width='100%' height='800%'>
+        </div>
+        <div class='stretched_images'>
+          <img src='images/bunny.png' width='100%' height='800%'>
+        </div>
 
-<!-- //neural and photoshopped bird image// -->
-  <div class='spiral4'>
-    <img src='myspirit.png' width='40%' height='40%'>
-  </div>
+      <!--//NOT STRETCHED OUTIMAGES//
+      //same images as above but not stretched// -->
+        <div class='image_format2'>
+          <img src='images/purgatory_music.png' width='100%' height='60%'>
+        </div>
+        <div class='image_format2'>
+          <img src='images/blessed_body2.png' width='100%' height='60%'>
+        </div>
+        <div class='image_format2'>
+          <img src='images/eyeseyeseyes.png' width='100%' height='60%'>
+        </div>
+        <div class='image_format2'>
+          <img src='images/bunny.png' width='100%' height='60%'>
+        </div>
 
-<!-- //REALLY STRETCHED OUT BG IMAGES//
-//I accidently had these set to 800% height but then I liked it so I kept them.
-I copied the exact same image below but at 60% height instead// -->
-  <div class='spiral_invert'>
-    <img src='purgatory_music.png' width='100%' height='800%'>
-  </div>
-  <div class='spiral_invert'>
-    <img src='blessed_body.png' width='100%' height='800%'>
-  </div>
-  <div class='spiral_invert'>
-    <img src='eyeseyeseyes.png' width='100%' height='800%'>
-  </div>
-  <div class='spiral_invert'>
-    <img src='bunny.png' width='100%' height='800%'>
-  </div>
+        <div class='image_format2'>
+          <img src='images/viens.png' width='100%' height='60%'>
+        </div>
 
-  //NOT STRETCHED OUTIMAGES//
-  //same images as above but not stretched//
-  <div class='spiral2'>
-    <img src='purgatory_music.png' width='100%' height='60%'>
-  </div>
-  <div class='spiral2'>
-    <img src='blessed_body.png' width='100%' height='60%'>
-  </div>
-  <div class='spiral2'>
-    <img src='eyeseyeseyes.png' width='100%' height='60%'>
-  </div>
-  <div class='spiral2'>
-    <img src='bunny.png' width='100%' height='60%'>
-  </div>
+        <div class='door_image'>
 
+        <a href="open_door/door.html">
+            <img src='images/door.png' width='10%' height='5%'>"
+        </a>
 
-  <!-- <div class='spiral3'>
-    <img src='numbers.png'width='100%' height='60%' >
-  </div> -->
+      </div>
 
+    <!-- //NUMBERS FALLING//
+    // I copy pasted this code and edited the images linked
+    to it to be numbers instead of snow
+    its taken from here: http://www.moonfruit.com/blog/creative/how-to-add-falling-snow-to-your-website //
 
-  <div class='spiral2'>
-    <img src='viens.png' width='100%' height='60%'>
-  </div>
+    //I know the 'style' should be moved over to css doc but leaving it for now
+    bc worried I'll fuck it up!!// -->
 
-<!-- //NUMBERS FALLING//
-// I copy pasted this code and edited the images linked
-to it to be numbers instead of snow
-its taken from here: http://www.moonfruit.com/blog/creative/how-to-add-falling-snow-to-your-website //
+    <div class="snow" />
+        <style>
+          .editor-stage .snow {
+            height:200px;
+            background: #fff;
+          }
+          .snow{
 
-//I know the 'style' should be moved over to css doc but leaving it for now
-bc worried I'll fuck it up!!// -->
+            position:fixed;
+            pointer-events:none;
+            top:0;
+            left:0;
+            right:0;
+            bottom:0;
+            height:200vh;
+            background: none;
+            background-image: url('images/numbers_redo1.png'), url('images/numbers_redo2_inverted.png'), url('images/numbers1.png');
+            z-index:1;
+            -webkit-animation: snow 40s linear infinite;
+            -webkit-filter:invert(100%);
+            filter:invert(100%);"
+            -moz-animation: snow 40s linear infinite;
+            -ms-animation: snow 40s linear infinite;
+            animation: snow 40s linear infinite;
+          }
+            @keyframes snow {
+              0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+              50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+              100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+              }
+            @-moz-keyframes snow {
+              0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+              50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+              100% {background-position: 400px 1000px, 200px 400px, 100px 300px;}
+              }
+            @-webkit-keyframes snow {
+              0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+              50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+              100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+              }
+            @-ms-keyframes snow {
+              0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+              50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+              100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+              }
 
-<div class="snow" />
-  <style>
-    .editor-stage .snow {
-      height:200px;
-      background: #fff;
-    }
-    .snow{
-
-      position:fixed;
-      pointer-events:none;
-      top:0;
-      left:0;
-      right:0;
-      bottom:0;
-      height:200vh;
-      background: none;
-      background-image: url('numbers_redo1.png'), url('numbers_redo2_inverted.png'), url('numbers1.png');
-      z-index:1;
-      -webkit-animation: snow 40s linear infinite;
-      -webkit-filter:invert(100%);
-      filter:invert(100%);"
-      -moz-animation: snow 40s linear infinite;
-      -ms-animation: snow 40s linear infinite;
-      animation: snow 40s linear infinite;
-    }
-    @keyframes snow {
-      0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
-      50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
-      100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
-    }
-    @-moz-keyframes snow {
-      0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
-      50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
-      100% {background-position: 400px 1000px, 200px 400px, 100px 300px;}
-    }
-    @-webkit-keyframes snow {
-      0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
-      50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
-      100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
-    }
-    @-ms-keyframes snow {
-      0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
-      50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
-      100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
-    }
-
-  </style>
-<p>
-
-  <!-- //END NUMBERS FALLING ('SNOW')// -->
-
-
-</body>
-</html>
+          </style>
+        <p>
+        <!-- //END NUMBERS FALLING ('SNOW')// -->
+      </body>
+  </html>
