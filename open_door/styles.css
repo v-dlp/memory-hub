@@ -1,5 +1,91 @@
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
 body {
   background: black;
+  background-size: 100%;
+}
 
-  background-size: 50vw;
+.image_format1{
+  position: absolute;
+  z-index: 2;
+  width: 200%;
+  height: 200%;
+
+}
+
+.image_format2{
+  position: absolute;
+  z-index: 0;
+  width: 200%;
+  height: 200%;
+
+}
+
+.being {
+  display: block;
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  margin-left: 140%;
+  margin-top: 10%;
+  z-index: 1;
+  opacity : 30%
+}
+
+.sexy {
+  display: block;
+  position: absolute;
+  margin-left: 150%;
+  margin-top: 27%;
+  z-index: 1;
+  opacity: 30%;
+  width: 45%;
+  height: 45%;
+}
+.star {
+  display: block;
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  margin-left: 50%;
+  margin-top: 10%;
+  z-index: 1;
+  opacity : 70%
+}
+
+.star2 {
+  display: block;
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  margin-left: 110%;
+  margin-top: 20%;
+  z-index: 1;
+  opacity : 70%
+}
+.spotlight {
+    position: absolute;
+    z-index: 3;
+    height: 200%;
+    width: 200%;
+    background-image: radial-gradient(
+        circle,
+        transparent 10%,
+        rgba(0, 0, 0, 0.8) 30%
+    );
 }
